@@ -35,10 +35,17 @@ end
 
 def full?(board)
 board.each do |value|
-  puts value
+  #puts value
   if value==" "
     return false
   end
 end
 return true
+end
+
+def draw?(board)
+  if !won(board) and full(board)
+    return true
+  end
+  return false
 end
