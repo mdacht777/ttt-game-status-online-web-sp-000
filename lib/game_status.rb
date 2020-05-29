@@ -51,13 +51,13 @@ def draw?(board)
 end
 
 def over?(board)
-  puts full?(board)
-  puts won?(board)
+#  puts full?(board)
+#  puts won?(board)
   if draw?(board)
-    return true
-  elsif won?(board)
     return true
   elsif full?(board)
     return false
+  elsif won?(board)
+    return true
   end
 end
