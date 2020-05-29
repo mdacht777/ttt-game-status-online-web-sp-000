@@ -55,7 +55,7 @@ def over?(board)
 #  puts won?(board)
   if draw?(board)
     return true
-  elsif full?(board)
+  elsif !full?(board)
     return false
   elsif won?(board)
     return true
