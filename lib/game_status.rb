@@ -51,6 +51,6 @@ def draw?(board)
 end
 
 def over?(board)
-  puts won?(board)
+  puts draw?(board)
   return true
 end
