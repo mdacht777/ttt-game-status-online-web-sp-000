@@ -68,4 +68,6 @@ def over?(board)
   end
 end
 
-def winner
+def winner(board)
+  puts won?(board)
+end
