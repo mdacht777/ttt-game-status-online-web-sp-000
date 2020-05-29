@@ -32,3 +32,12 @@ WIN_COMBINATIONS.each do |win_combination|
 end
 return false
 end
+
+def full?(board)
+board.each do |value|
+  if value==""
+    return false
+  end
+end
+return true
+end
