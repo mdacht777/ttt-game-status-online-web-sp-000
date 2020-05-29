@@ -51,6 +51,8 @@ def draw?(board)
 end
 
 def over?(board)
-  puts draw?(board)
+  if draw?(board)
+    return true
+  end
   return true
 end
