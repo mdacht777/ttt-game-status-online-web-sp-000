@@ -27,7 +27,7 @@ WIN_COMBINATIONS.each do |win_combination|
   position_2 = board[win_index_2] # load the value of the board at win_index_2
   position_3 = board[win_index_3] # load the value of the board at win_index_3
   if (position_1 == "X" || position_1== "O") && position_2 == position_1 && position_3 == position_1
-    return win_combination,position_1 # return the win_combination indexes that won.
+    return win_combination # return the win_combination indexes that won.
   end
 end
 return false
@@ -69,5 +69,5 @@ def over?(board)
 end
 
 def winner(board)
-  puts position_1
+  puts won?(board)[0]
 end
