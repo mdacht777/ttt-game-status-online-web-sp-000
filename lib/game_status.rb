@@ -27,9 +27,9 @@ WIN_COMBINATIONS.each do |win_combination|
   position_2 = board[win_index_2] # load the value of the board at win_index_2
   position_3 = board[win_index_3] # load the value of the board at win_index_3
   if position_1 == "X" && position_2 == "X" && position_3 == "X"
-    return win_combination # return the win_combination indexes that won.
+    win_combination # return the win_combination indexes that won.
   else
-    return false
+    false
   end
 end
 end
