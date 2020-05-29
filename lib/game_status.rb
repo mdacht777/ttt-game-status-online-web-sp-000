@@ -69,5 +69,5 @@ def over?(board)
 end
 
 def winner(board)
-  puts won?(board)[0]
+  puts won?(board)
 end
