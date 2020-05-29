@@ -30,6 +30,5 @@ WIN_COMBINATIONS.each do |win_combination|
   if (position_1 == "X" || position_1== "O") && position_2 == position_1 && position_3 == position_1
     return win_combination # return the win_combination indexes that won.
   end
-  return false
 end
 end
