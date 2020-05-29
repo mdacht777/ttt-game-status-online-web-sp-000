@@ -35,6 +35,7 @@ end
 
 def full?(board)
 board.each do |value|
+  puts value
   if value==""
     return false
   end
